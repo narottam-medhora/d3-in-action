@@ -1,11 +1,8 @@
 d3.csv("src/data/weekly_temperature.csv", d3.autoType).then((data) => {
-  console.log("temperature data", data);
   drawLineChart(data);
 });
 
 function drawLineChart(data) {
-  console.log("draw the line chart");
-
   const margin = { top: 40, right: 170, bottom: 25, left: 40 };
   const width = 1000;
   const height = 500;
